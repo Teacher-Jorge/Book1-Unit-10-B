@@ -1,0 +1,60 @@
+const input1= document.getElementById('input1')
+const input2 = document.getElementById('input2')
+const input3 = document.getElementById('input3')
+
+const rigth1 = document.getElementById('right1')
+const rigth2 = document.getElementById('right2')
+const rigth3 = document.getElementById('right3')
+
+//PAGE 1
+
+input1.addEventListener('keyup', (e) => {
+    if (input1.value === "didn't" || input1.value === "didnt" || input1.value === "did not") {
+        input1.value = "didn't"
+        audio = document.getElementById('swoosh1')
+        audio.play()
+        input1.style.color = 'green'
+        rigth1.style.visibility = 'visible'
+        document.getElementById('input2').focus()
+    } else {
+        input1.style.color = 'red'
+    }
+     
+})
+
+input2.addEventListener('keyup', (e) => {
+    if (input2.value === "have") {
+        audio = document.getElementById('swoosh1')
+        audio.play()
+        input2.style.color = 'green'
+        right2.style.visibility = 'visible'
+        document.getElementById('input3').focus()
+    } else {
+        input2.style.color = 'red'
+    }
+        
+})
+
+input3.addEventListener('keyup', (e) => {
+    if (input3.value === "had") {
+        audio = document.getElementById('swoosh1')
+        audio.play()
+        input3.style.color = 'green'
+        right3.style.visibility = 'visible'
+        document.activeElement.blur();
+    } else {
+        input3.style.color = 'red'
+    }
+        
+})
+
+
+
+
+
+
+
+
+
+
+
