@@ -23,12 +23,12 @@ btnAnimation.addEventListener('click', function() {
                 opacity: 1
             },
             {
-                transform: "translateX(-1200px)",
-                opacity: 0.05,
+                transform: "translateX(-2000px) rotate(500deg) scale(0%) translateY(-1000px)",
+                opacity: 1,
             }
         ],
         {
-            duration: 1000,
+            duration: 1500,
             fill: "forwards",
             delay: 100,
             easing: "ease-in-out",

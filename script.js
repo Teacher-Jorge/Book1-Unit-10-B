@@ -19,25 +19,25 @@ btnAnimation.addEventListener('click', function() {
     img1.animate(
         [
             {
-                transform: "translateX(0)",
-                opacity: 1
+                transform: "scale(100%) translateX(0px)", 
+                opacity: 1,
             },
             {
-                transform: "translateX(-1200px)",
-                opacity: 0.05,
+                transform: "scale(0%) translateX(-2000px) translateY(-2000px)",
+                opacity: 1,
             }
         ],
         {
-            duration: 1000,
+            duration: 2000,
             fill: "forwards",
-            delay: 100,
+            delay: 0,
             easing: "ease-in-out",
         }
     )
 
     setTimeout(() => {
          window.location.href = "pages/page2.html";
-    }, 1000);
+    }, 2000);
 
    
 })

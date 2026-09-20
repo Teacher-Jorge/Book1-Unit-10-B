@@ -22,7 +22,7 @@ btnAnimation.addEventListener('click', function() {
                 opacity: 1
             },
             {
-                transform: "translateX(-1200px)",
+                transform: "translateX(-1500px)",
                 opacity: 0.05,
             }
         ],
@@ -35,7 +35,7 @@ btnAnimation.addEventListener('click', function() {
     )
 
     setTimeout(() => {
-        
+        window.location.href = "page5"
     }, 1000);
 
    

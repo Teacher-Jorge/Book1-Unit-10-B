@@ -22,12 +22,12 @@ btnAnimation.addEventListener('click', function() {
                 opacity: 1
             },
             {
-                transform: "translateX(0px) rotate(500deg) scale(0%)",
-                opacity: 0,
+                transform: "translateX(-1500px)",
+                opacity: 0.05,
             }
         ],
         {
-            duration: 2000,
+            duration: 1000,
             fill: "forwards",
             delay: 100,
             easing: "ease-in-out",
@@ -35,16 +35,16 @@ btnAnimation.addEventListener('click', function() {
     )
 
     setTimeout(() => {
-         window.location.href = "page4.html";
-    }, 1500);
+        window.SecurityPolicyViolationEvent.href = "page6.html"
+    }, 1000);
 
    
 })
 
-//PAGE 1
 
 input1.addEventListener('keyup', (e) => {
     if (input1.value === "did") {
+        input1.value = "did"
         audio = document.getElementById('swoosh1')
         audio.play()
         input1.style.color = 'green'
@@ -57,7 +57,7 @@ input1.addEventListener('keyup', (e) => {
 })
 
 input2.addEventListener('keyup', (e) => {
-    if (input2.value === "go") {
+    if (input2.value === "make") {
         audio = document.getElementById('swoosh1')
         audio.play()
         input2.style.color = 'green'
@@ -70,7 +70,7 @@ input2.addEventListener('keyup', (e) => {
 })
 
 input3.addEventListener('keyup', (e) => {
-    if (input3.value === "went") {
+    if (input3.value === "made") {
         audio = document.getElementById('swoosh1')
         audio.play()
         input3.style.color = 'green'
