@@ -2,11 +2,45 @@ const input1= document.getElementById('input1')
 const input2 = document.getElementById('input2')
 const input3 = document.getElementById('input3')
 
+const btnAnimation = document.getElementById('btnAnimation')
+
+const img1 = document.getElementById('img1')
+
 const rigth1 = document.getElementById('right1')
 const rigth2 = document.getElementById('right2')
 const rigth3 = document.getElementById('right3')
 
 //PAGE 1
+
+btnAnimation.addEventListener('click', function() {
+    audio = document.getElementById('tap1')
+    audio.play();
+
+    img1.animate(
+        [
+            {
+                transform: "translateX(0)",
+                opacity: 1
+            },
+            {
+                transform: "translateX(-1200px)",
+                opacity: 0.05,
+            }
+        ],
+        {
+            duration: 1000,
+            fill: "forwards",
+            delay: 100,
+            easing: "ease-in-out",
+        }
+    )
+
+    setTimeout(() => {
+         window.location.href = "pages/page2.html";
+    }, 1000);
+
+   
+})
 
 input1.addEventListener('keyup', (e) => {
     if (input1.value === "did") {

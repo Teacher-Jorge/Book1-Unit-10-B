@@ -75,3 +75,23 @@
     text-shadow: 1px 1px 2px black;
     
 }
+
+.animation-button {
+    font-family: 'bangers';
+    font-size: 2rem;
+    color: rgb(0, 136, 255);
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    bottom: 10px;
+    right: 400px;
+    background-color: aliceblue;
+    border-style: none;
+    box-shadow: 1px 1px 2px black;
+    border-radius: 10px;
+}
+
+.animation-button:active {
+    box-shadow: none;
+    color: rgb(225, 0, 255);
+}
