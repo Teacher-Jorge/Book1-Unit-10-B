@@ -19,17 +19,15 @@ btnAnimation.addEventListener('click', function() {
         [
             {
                 transform: "translateX(0)",
-                
                 opacity: 1
             },
             {
-                transform: "translateX(-1500px) translateY(-1000px) scale(0%)",
-                
+                transform: "translateX(-1500px)",
                 opacity: 0.05,
             }
         ],
         {
-            duration: 2000,
+            duration: 1000,
             fill: "forwards",
             delay: 100,
             easing: "ease-in-out",
@@ -37,8 +35,8 @@ btnAnimation.addEventListener('click', function() {
     )
 
     setTimeout(() => {
-        window.location.href = "page6.html"
-    }, 1500);
+        window.location.href = "page7.html"
+    }, 1000);
 
    
 })
@@ -59,7 +57,7 @@ input1.addEventListener('keyup', (e) => {
 })
 
 input2.addEventListener('keyup', (e) => {
-    if (input2.value === "make") {
+    if (input2.value === "eat") {
         audio = document.getElementById('swoosh1')
         audio.play()
         input2.style.color = 'green'
@@ -72,7 +70,7 @@ input2.addEventListener('keyup', (e) => {
 })
 
 input3.addEventListener('keyup', (e) => {
-    if (input3.value === "made") {
+    if (input3.value === "ate") {
         audio = document.getElementById('swoosh1')
         audio.play()
         input3.style.color = 'green'

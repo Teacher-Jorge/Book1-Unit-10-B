@@ -34,6 +34,7 @@
 }
 
 .conversation1 {
+    width: 800px;
     font-size: 2.5rem;
     font-family: 'Patrick Hand';
     font-style: italic;
@@ -42,6 +43,7 @@
 }
 
 .conversation2 {
+    width: 800px;
     font-size: 2.5rem;
     font-family: 'Patrick Hand';
     font-style: italic;
@@ -49,8 +51,28 @@
     margin-bottom: 10px;
 }
 
+.conversation1:hover {
+    background-color: rgba(30, 255, 0, 0.329);
+    border-radius: 15px;
+    border: 1px solid rgb(0, 177, 15);
+    cursor: pointer;
+    .inputs {
+        background-color: rgba(30, 255, 0, 0.329);
+    }
+}
+
+.conversation2:hover {
+    background-color: rgba(255, 0, 212, 0.308);
+    border-radius: 15px;
+    border: 1px solid rgb(134, 0, 105);
+    cursor: pointer;
+     .inputs {
+        background-color: rgba(255, 0, 212, 0.308);
+    }
+}
+
 .inputs {
-    width: 110px;
+    width: 120px;
     font-size: 2.5rem;
     font-family: 'Patrick Hand';
     font-style: italic;
@@ -61,6 +83,10 @@
 
 .right {
     visibility: hidden;
+}
+
+.images {
+    border-radius: 20px;
 }
 
 .next {
