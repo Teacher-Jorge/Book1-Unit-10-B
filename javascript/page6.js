@@ -22,7 +22,7 @@ btnAnimation.addEventListener('click', function() {
                 opacity: 1
             },
             {
-                transform: "translateX(-1500px)",
+                transform: "translateX(1500px) translateY(-1000px) scale(0%)",
                 opacity: 0.05,
             }
         ],

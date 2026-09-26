@@ -22,7 +22,7 @@ btnAnimation.addEventListener('click', function() {
                 opacity: 1
             },
             {
-                transform: "translateX(1500px) translateY(1000px) scale(0%)",
+                transform: "translateX(1500px) translateY(500px) scale(0%) rotate(360deg)",
                 opacity: 0.05,
             }
         ],
@@ -35,7 +35,7 @@ btnAnimation.addEventListener('click', function() {
     )
 
     setTimeout(() => {
-        window.location.href = "page8.html"
+        window.location.href = "page11.html"
     }, 1000);
 
    
@@ -57,7 +57,7 @@ input1.addEventListener('keyup', (e) => {
 })
 
 input2.addEventListener('keyup', (e) => {
-    if (input2.value === "come") {
+    if (input2.value === "drive") {
         audio = document.getElementById('swoosh1')
         audio.play()
         input2.style.color = 'green'
@@ -70,7 +70,7 @@ input2.addEventListener('keyup', (e) => {
 })
 
 input3.addEventListener('keyup', (e) => {
-    if (input3.value === "came") {
+    if (input3.value === "drove") {
         audio = document.getElementById('swoosh1')
         audio.play()
         input3.style.color = 'green'

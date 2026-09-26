@@ -17,12 +17,12 @@ btnAnimation.addEventListener('click', function() {
     audio.play()
     img1.animate(
         [
-            {
+             {
                 transform: "translateX(0)",
                 opacity: 1
             },
             {
-                transform: "translateX(-1500px)",
+                transform: "translateX(1500px) translateY(0px) scale(0%)",
                 opacity: 0.05,
             }
         ],
